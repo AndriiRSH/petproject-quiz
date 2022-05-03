@@ -49,11 +49,45 @@ body{
 .options {
   font-weight: 500;
   margin-top: 20px;
+  margin-bottom: 15px;
 }
 
-.option {}
+.options div{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
 
-.option1 {}
+.option {
+  background-color: #d7d7d7;
+  margin-top: 5px;
+  border-radius: 5px;
+  line-height: 50px;
+  opacity: 0.8;
+  transition: 0.3s;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.option:hover{
+  opacity: 1;
+}
+
+.options div.correct{
+  color: #ffffff;
+  background-color: green;
+}
+
+.options div.wrong{
+  color: #ffffff;
+  background-color: red;
+}
+
+.options div.disabled{
+  pointer-events: none;
+}
+
+.option1 {
+}
 
 .option2 {}
 
@@ -73,20 +107,37 @@ body{
   opacity: 0.8;
   transition: 0.3s;
   font-size: 16px;
-  margin: 5px 0;
+  margin: 15px 0;
 }
 
 .button:hover {
   opacity: 1
 }
 
-.answear-indicator{
+.answear-indicator div{
   height: 40px;
   width: 40px;
   display: inline-block;
   border-radius: 50%;
   background-color: #f5f5dc;
-  margin-right: 3px;
+  margin-right: 10px;
+}
+
+.answear-indicator div.correct {
+  background-color: green;
+}
+
+.answear-indicator div.wrong {
+  background-color: red;
+}
+
+.quiz-over-modal{
+  opacity: 0;
+}
+
+.quiz-over-modal div.active{
+  opacity: 1;
+  background-color: aquamarine;
 }
 
 
