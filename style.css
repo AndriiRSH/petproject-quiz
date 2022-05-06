@@ -16,10 +16,22 @@ body{
 }
 
 .quiz-over-modal {
-  
+  opacity: 0;
+  background-color: aquamarine;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
 }
 
-.content {}
+.quiz-over-modal div.active {
+  opacity: 1;
+  background-color: aquamarine;
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+}
 
 .quiz-container {
   max-width: 700px;
@@ -86,15 +98,6 @@ body{
   pointer-events: none;
 }
 
-.option1 {
-}
-
-.option2 {}
-
-.option3 {}
-
-.option4 {}
-
 .button {
   background-color: f5f5dc;
   border: none;
@@ -131,13 +134,13 @@ body{
   background-color: red;
 }
 
-.quiz-over-modal{
+/* .quiz-over-modal{
   opacity: 0;
 }
 
 .quiz-over-modal div.active{
   opacity: 1;
   background-color: aquamarine;
-}
+} */
 
 

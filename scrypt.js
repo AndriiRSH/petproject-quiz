@@ -7,7 +7,8 @@ const optionElements = document.querySelectorAll(".option");
 
 const question = document.getElementById("question"),
   numberOfQuestion = document.getElementById("number-of-question"),
-  numberOfAllQuestion = document.getElementById("number-of-all-question");
+  numberOfAllQuestion = document.getElementById("number-of-all-question"),
+  numberOfAllQuestions2 = document.getElementById("number-of-all-questions-2");
 
 let IndexOfQuestion, //Індекс теперішнього запитання
   indexOfPages = 0; //Індекс сторінок
@@ -18,7 +19,6 @@ const btnNext = document.getElementById("btn-next");
 let score = 0; // Last Result
 
 const corectAnswear = document.getElementById("correct-answear"),
-  NumberOfAllQuestion = document.getElementById("number - of - all - question"),
   btnTryAgain = document.getElementById("btn-try-again");
 
 const questions = [
@@ -137,17 +137,17 @@ for (option of optionElements) {
 }
 
 const quizOver = () => {
-  // alert("Опитування завершено! Успіхів");
-  document.querySelectorAll(".quiz-over-modal").classList.add("active");
-  corectAnswear.innerHTML = score;
-  numberOfAllQuestion.innerHTML = questions.length;
+  alert("Опитування завершено! Успіхів");
+  // document.querySelector(".quiz-over-modal").classList.add(".active");
+  // corectAnswear.innerHTML = score;
+  // numberOfAllQuestions2.innerHTML = questions.length;
 };
 
 const tryAgain = () => {
   window.location.reload();
 };
 
-btnTryAgain.addEventListener;
+btnTryAgain.addEventListener("click", tryAgain);
 
 window.addEventListener("load", () => {
   randomQuestion();
